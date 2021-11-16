@@ -1,0 +1,14 @@
+# Sum of multiples of 3 and 5 below 1000
+
+class Solution:
+    def sum_of_multiples(self, limit):
+        sum = 0
+        for i in range(limit):
+            if i % 3 == 0 or i % 5 == 0:
+                sum += i
+        return sum
+
+
+if __name__ == '__main__':
+    s = Solution()
+    print(s.sum_of_multiples(1000))
